@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.sidebar, .main-content {
+    padding: 15px;
+}
+.sidebar  {
+   background-color: #f4f4f4;
+    position: fixed;
+    width: 40%;
+    height: 60%;
+}
+
+.main-content {
+    margin-left: 40%;
+}
+

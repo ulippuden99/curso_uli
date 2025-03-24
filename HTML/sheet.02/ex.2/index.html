@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form action=""  method="get">
+            <fieldset>
+            <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" maxlength="12" required>
+            <br>
+            <br>
+                <label for="surname">Apellido:</label>
+                <input type="text" id="surname" name="surname" maxlength="13" required>
+            <br>
+            <br>
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" id="date" name="date" required>
+
+            <br>
+            <br>
+                <label for="options">Género:</label>
+                <label for="opcion1"><br>
+                <input type="checkbox" id="opcion1" name="opciones" value="opcion1" > Hombre
+                </label><br>
+                <label for="opcion2">
+                <input type="checkbox" id="opcion2" name="opciones" value="opcion2" > Mujer
+                </label><br>
+                <label for="opcion3">
+                <input type="checkbox" id="opcion3" name="opciones" value="opcion3" > Otros
+                </label><br>
+            <br>
+            <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" pattern=".+@.+\.com" name="email" required>
+            <br>
+            <br>
+              <label for="number">Número de teléfono:</label>
+                <input type="phone_number" id="number" name="number" maxlength="9" required>
+            <br>
+            <br>
+                <label for="mensaje">Dirección:</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" cols="50" maxlength="300"></textarea>  
+            <br>
+            <br>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" maxlength="15" required>
+            <br>
+            <br>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" pattern="@$!%*#?&" maxlength="32" required
+                       title="La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un carácter especial">    
+            <br>
+            <br>
+                <label for="obligatorio">He leído y acepto el aviso legal y la política de privacidad</label>
+                <input type="checkbox" id="obligatorio" name="obligatorio" value="YES" required>
+
+        </fieldset>
+            <br>
+            <br>
+            
+    </form>
+</body>
+</html>
