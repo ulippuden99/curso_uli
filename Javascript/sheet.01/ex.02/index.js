@@ -1,9 +1,13 @@
-console.log(42); // Esto solo imprimirá el número 42
-console.log(typeof 42); // Esto imprimirá "number", el tipo de dato de 42
+let numero=42
+let string="Hola string"
+let booleano=true
 
-console.log("Hola string"); // Imprime el texto "Hola string"
-console.log(typeof "Hola string"); // Imprime "string", el tipo de dato de la cadena
+console.log(numero); // Esto solo imprimirá el número 42
+console.log(typeof numero); // Esto imprimirá "number", el tipo de dato de 42
 
-console.log(true); // Imprime el valor booleano true
-console.log(typeof true); // Imprime "boolean", el tipo de dato de true
+console.log(string); // Imprime el texto "Hola string"
+console.log(typeof string); // Imprime "string", el tipo de dato de la cadena
+
+console.log(booleano); // Imprime el valor booleano true
+console.log(typeof booleano); // Imprime "boolean", el tipo de dato de true
 
