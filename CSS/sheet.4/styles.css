@@ -63,8 +63,9 @@ body {
 
 .Bulbasaur {
    background: linear-gradient(gray 50%, white 50%);
-   width: 100px;
-   height: 200px;
+   border: solid gray;
+   width: 125px;
+   height: 210px;
 }
 
 
@@ -79,4 +80,31 @@ body {
   padding: 3px;
   background-color: aliceblue;
 border-radius: 100px;
+}
+
+
+
+.Ivysaur {
+  background: linear-gradient(gray 50%, white 50%);
+  border: solid gray;
+  width: 125px;
+  height: 180px;
+}
+
+.Ivysaur {
+  position: absolute; /* Cambiar a posición absoluta */
+  top: 83px; /* Mover el elemento hacia abajo */
+  left: 200px; /* Moverlo hacia la derecha */
+  width: 125px;
+  height: 160px;
+}
+
+.Tipos p :nth-child(2) {
+
+  border: solid;
+  padding: 3px;
+  background-color: aliceblue;
+border-radius: 100px;
+position: absolute; /* Cambiar a posición absoluta */
+
 }
