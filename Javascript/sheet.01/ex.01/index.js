@@ -1,0 +1,1 @@
+console.log("Hola, Mundo!"); //Imprime un "Hola, Mundo! con el console.log"
