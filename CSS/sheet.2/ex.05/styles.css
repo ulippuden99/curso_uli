@@ -1,0 +1,26 @@
+.flex-container {
+    display: flex; /* Para colocar los Items en la misma linea*/
+    line-height: 170%; /*Para centrar el texto en las cajas verticalemnte*/
+    text-align: center; /*Para centrar el texto en las cajas horizontalmente*/
+    gap:20px; /*Para dejar espacio entre las cajas*/
+}
+
+    div :nth-child(1) { /*Creamos el primer hijo del div flex-container*/
+        width: 100px;  
+        background-color: gray;
+        border: solid gray
+    }
+
+
+    div :nth-child(2) { /*Creamos el segundo hijo del div flex-container*/
+        flex-grow: 1; /* La caja ocupa el espacio disponible */
+        background-color: gray;
+        border: solid gray
+    }
+
+
+    div :nth-child(3) { /*Creamos el tercer hijo del div flex-container*/
+        width: 100px;
+        background-color: gray;
+        border: solid gray 
+    }
