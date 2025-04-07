@@ -5,8 +5,9 @@ console.log(persona.age) // Imprimimos por pantalla  objeto.propiedad que querem
 console.log(persona.ciudad) // Imprimimos por pantalla  objeto.propiedad que queremos mostrar, en este caso ciudad
 
 
- function describirPersona(persona)  {
-    let persona = {name: "Ulises", age: 22, ciudad: "Malaga"};  
+ function describirPersona(persona)  { // Declaramos la funcion describirPersona y le añadimos el objeto
+   
+   return(`Nombre: ${persona.name}, Edad: ${persona.age}, Ciudad: ${persona.ciudad}`)  // Hacemos que nos devuelva los parametros pedidos
  }
 
- return(describirPersona)
+
