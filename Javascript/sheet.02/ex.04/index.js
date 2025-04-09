@@ -1,11 +1,10 @@
-const numeros = [1, 2, 3, 4, 5];
+const numeros = [1, 2, 3, 4, 5];  // Declaramos el array
 
-function sumarNumeros(numeros) {
-    const resultado = numeros.reduce((acumulador, numeros) =>{return acumulador + numeros;},0)
-return resultado;
+function sumarNumeros(numeros) { // Declaramos la funcion 
+    const resultado = numeros.reduce((acumulador, numeros) =>{return acumulador + numeros;},0) //Declaramos la nueva variable la igualamos a la variable con .reduce
+return resultado; // Devolvemos resultado
 
 }
 
-console.log(sumarNumeros(numeros));
+console.log(sumarNumeros(numeros)); // Imprimimos el resultado de la funcion
 
-//EJERCICIO INCOMPLETO
