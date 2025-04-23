@@ -1,3 +1,3 @@
-function mostrarClick (number) {
-
+function mostrarClick () {
+    console.log("¡Boton pulsado!")
 }
