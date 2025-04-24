@@ -119,17 +119,79 @@ WHERE country = "Canada"
 ```
 ## Ordena todas las ciudades de Estados Unidos por su latitud de norte a sur
 ```sql
-
+SELECT city, latitude
+FROM north_american_cities 
+WHERE country = "United States"
+ORDER BY latitude DESC;
 ```
 ## Enumere todas las ciudades al oeste de Chicago, ordenadas de oeste a este
 ```sql
-
+SELECT city, longitude
+FROM north_american_cities 
+WHERE longitude < -87.629798
+ORDER BY longitude ASC; 
 ```
 ## Enumere las dos ciudades más grandes de México (por población)
 ```sql
-
+SELECT city, population
+FROM north_american_cities 
+WHERE country = "Mexico"
+ORDER BY population DESC
+LIMIT 2; 
 ```
 ## Enumere la tercera y cuarta ciudades más grandes (por población) de los Estados Unidos y su población.
 ```sql
+SELECT city, population
+FROM north_american_cities 
+WHERE country = "United States"
+ORDER BY population DESC
+LIMIT 2
+OFFSET 2;
+```
+----------------------------------------------------
+# Ejercicio 6
+![Ejercicio 6 de BBDD](./images/BBDD_Ejercicio6.png)
 
+## Encuentra las ventas nacionales e internacionales de cada película.
+```sql
+SELECT title, domestic_sales, international_sales
+FROM boxoffice
+INNER JOIN movies
+ON id = movie_id    
+```
+## Muestra las cifras de ventas de cada película que tuvo un mejor desempeño a nivel internacional que a nivel nacional.
+```sql
+SELECT  title, international_sales
+FROM boxoffice
+INNER JOIN movies
+ON boxoffice.movie_id = movies.id
+WHERE international_sales > domestic_sales
+```
+## Enumere todas las películas por sus calificaciones en orden descendente
+```sql
+SELECT  title, rating
+FROM movies
+INNER JOIN boxoffice
+ON movies.id = boxoffice.movie_id
+ORDER BY rating DESC;
+```
+
+----------------------------------------------------
+# Ejercicio 7   
+![Ejercicio 7 de BBDD](./images/BBDD_Ejercicio7.png)
+
+## Encuentra la lista de todos los edificios que tienen empleados
+```sql
+SELECT DISTINCT building  FROM employees
+```
+## Encuentra la lista de todos los edificios y su capacidad
+```sql
+SELECT building_name, capacity FROM buildings
+```
+## Enumere todos los edificios y los distintos roles de los empleados en cada edificio (incluidos los edificios vacíos)
+```sql
+SELECT building, role 
+FROM employees
+JOIN LEFT buildings
+ON building.employees = building_name.buildings
 ```
