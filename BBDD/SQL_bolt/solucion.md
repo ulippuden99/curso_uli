@@ -75,3 +75,61 @@ SELECT * FROM movies WHERE title LIKE "WALL%";
 
 ----------------------------------------------------
 # Ejercicio 4
+
+![Ejercicio 4 de BBDD](./images/BBDD_Ejercicio4.png)
+
+## Lista de todos los directores de películas de Pixar (en orden alfabético), sin duplicados
+```sql
+SELECT DISTINCT director
+FROM  movies
+ORDER BY director ASC;
+```
+
+## Enumere las últimas cuatro películas de Pixar estrenadas (ordenadas de la más reciente a la menos reciente)
+```sql
+SELECT title, year
+FROM  movies
+ORDER BY year DESC
+LIMIT 4;
+```
+## Enumera las cinco primeras películas de Pixar ordenadas alfabéticamente
+```sql
+SELECT title, year
+FROM  movies
+ORDER BY title ASC
+LIMIT 5;
+```
+## Enumera las próximas cinco películas de Pixar ordenadas alfabéticamente
+```sql
+SELECT title, year
+FROM  movies
+ORDER BY title ASC
+LIMIT 5 OFFSET 5;
+```
+----------------------------------------------------
+# Ejercicio 5
+
+![Ejercicio 5 de BBDD](./images/BBDD_Ejercicio5.png)
+
+## Enumere todas las ciudades canadienses y sus poblaciones.
+```sql
+SELECT city, population 
+FROM north_american_cities 
+WHERE country = "Canada"
+```
+## Ordena todas las ciudades de Estados Unidos por su latitud de norte a sur
+```sql
+
+```
+## Enumere todas las ciudades al oeste de Chicago, ordenadas de oeste a este
+```sql
+
+```
+## Enumere las dos ciudades más grandes de México (por población)
+```sql
+
+```
+## Enumere la tercera y cuarta ciudades más grandes (por población) de los Estados Unidos y su población.
+```sql
+
+```
