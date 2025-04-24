@@ -190,8 +190,5 @@ SELECT building_name, capacity FROM buildings
 ```
 ## Enumere todos los edificios y los distintos roles de los empleados en cada edificio (incluidos los edificios vacíos)
 ```sql
-SELECT building, role 
-FROM employees
-JOIN LEFT buildings
-ON building.employees = building_name.buildings
+EN ELLO
 ```
