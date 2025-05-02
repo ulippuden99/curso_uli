@@ -1,0 +1,6 @@
+# Sistema de Gestión para un Club de Deportes
+
+## 1. Diseñar el Modelo Entidad-Relación (ER):
+### Identifica las entidades, relaciones y atributos necesarios para cumplir los requerimientos.
+### Define las cardinalidades de cada relación.
+### Incluye restricciones como claves primarias y claves foráneas.
